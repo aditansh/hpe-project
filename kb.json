@@ -1,0 +1,263 @@
+{
+    "use_cases": [
+        {
+            "name": "Anomaly Detection",
+            "description": "Detect unusual patterns that do not conform to expected behavior.",
+            "tools": [
+                {
+                    "toolname": "IsolationForest",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "max_samples", "contamination"]
+                },
+                {
+                    "toolname": "OneClassSVM",
+                    "commands": "fit_predict",
+                    "arguments": ["kernel", "nu", "gamma"]
+                },
+                {
+                    "toolname": "AutoEncoder",
+                    "commands": "fit_predict",
+                    "arguments": ["epochs", "batch_size", "learning_rate"]
+                }
+            ]
+        },
+        {
+            "name": "Malware Classification",
+            "description": "Classify files as benign or malicious.",
+            "tools": [
+                {
+                    "toolname": "RandomForest",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "max_depth", "random_state"]
+                },
+                {
+                    "toolname": "XGBoost",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "learning_rate", "max_depth"]
+                },
+                {
+                    "toolname": "SVM",
+                    "commands": "fit_predict",
+                    "arguments": ["kernel", "C", "gamma"]
+                }
+            ]
+        },
+        {
+            "name": "Phishing Detection",
+            "description": "Identify phishing emails or websites.",
+            "tools": [
+                {
+                    "toolname": "NaiveBayes",
+                    "commands": "fit_predict",
+                    "arguments": ["alpha", "fit_prior"]
+                },
+                {
+                    "toolname": "LogisticRegression",
+                    "commands": "fit_predict",
+                    "arguments": ["penalty", "C", "solver"]
+                },
+                {
+                    "toolname": "DecisionTree",
+                    "commands": "fit_predict",
+                    "arguments": ["criterion", "splitter", "max_depth"]
+                }
+            ]
+        },
+        {
+            "name": "Intrusion Detection",
+            "description": "Detect unauthorized access to network systems.",
+            "tools": [
+                {
+                    "toolname": "KNN",
+                    "commands": "fit_predict",
+                    "arguments": ["n_neighbors", "weights", "algorithm"]
+                },
+                {
+                    "toolname": "DeepLearning",
+                    "commands": "fit_predict",
+                    "arguments": ["epochs", "batch_size", "learning_rate"]
+                },
+                {
+                    "toolname": "RandomForest",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "max_depth", "random_state"]
+                }
+            ]
+        },
+        {
+            "name": "Ransomware Detection",
+            "description": "Identify and classify ransomware activities.",
+            "tools": [
+                {
+                    "toolname": "GradientBoosting",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "learning_rate", "max_depth"]
+                },
+                {
+                    "toolname": "SVM",
+                    "commands": "fit_predict",
+                    "arguments": ["kernel", "C", "gamma"]
+                },
+                {
+                    "toolname": "KNN",
+                    "commands": "fit_predict",
+                    "arguments": ["n_neighbors", "weights", "algorithm"]
+                }
+            ]
+        },
+        {
+            "name": "DDoS Attack Detection",
+            "description": "Detect Distributed Denial of Service attacks.",
+            "tools": [
+                {
+                    "toolname": "RandomForest",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "max_depth", "random_state"]
+                },
+                {
+                    "toolname": "NeuralNetwork",
+                    "commands": "fit_predict",
+                    "arguments": ["epochs", "batch_size", "learning_rate"]
+                },
+                {
+                    "toolname": "XGBoost",
+                    "commands": "fit_predict",
+                    "arguments": ["n_estimators", "learning_rate", "max_depth"]
+                }
+            ]
+        },
+        {
+            "name": "Botnet Detection",
+            "description": "Identify and prevent botnet activities.",
+            "tools": [
+                {
+                    "toolname": "LogisticRegression",
+                    "commands": "fit_predict",
+                    "arguments": ["penalty", "C", "solver"]
+                },
+                {
+                    "toolname": "DecisionTree",
+                    "commands": "fit_predict",
+                    "arguments": ["criterion", "splitter", "max_depth"]
+                },
+                {
+                    "toolname": "SVM",
+                    "commands": "fit_predict",
+                    "arguments": ["kernel", "C", "gamma"]
+                }
+            ]
+        },
+        {
+            "name": "Log Analysis",
+            "description": "Analyze logs for security incidents and anomalies.",
+            "tools": [
+                {
+                    "toolname": "Regex",
+                    "commands": "search",
+                    "arguments": ["log_file", "pattern"]
+                },
+                {
+                    "toolname": "Machine Learning",
+                    "commands": "classify",
+                    "arguments": ["model", "log_file"]
+                }
+            ]
+        },
+        {
+            "name": "Threat Intelligence",
+            "description": "Use external threat intelligence to enhance security posture.",
+            "tools": [
+                {
+                    "toolname": "API Integration",
+                    "commands": "fetch",
+                    "arguments": ["api_endpoint", "api_key"]
+                },
+                {
+                    "toolname": "Machine Learning",
+                    "commands": "analyze",
+                    "arguments": ["data"]
+                }
+            ]
+        },
+        {
+            "name": "Web Application Security",
+            "description": "Identify and mitigate security vulnerabilities in web applications.",
+            "tools": [
+                {
+                    "toolname": "Static Analysis",
+                    "commands": "scan",
+                    "arguments": ["code_path"]
+                },
+                {
+                    "toolname": "Dynamic Analysis",
+                    "commands": "scan",
+                    "arguments": ["url"]
+                }
+            ]
+        },
+        {
+            "name": "Vulnerability Assessment",
+            "description": "Identify and prioritize vulnerabilities in systems.",
+            "tools": [
+                {
+                    "toolname": "Scan Tools",
+                    "commands": "scan",
+                    "arguments": ["target"]
+                },
+                {
+                    "toolname": "Machine Learning",
+                    "commands": "predict",
+                    "arguments": ["model", "target"]
+                }
+            ]
+        },
+        {
+            "name": "Incident Response",
+            "description": "Respond to and mitigate security incidents.",
+            "tools": [
+                {
+                    "toolname": "Forensics",
+                    "commands": "analyze",
+                    "arguments": ["evidence"]
+                },
+                {
+                    "toolname": "Automated Response",
+                    "commands": "execute",
+                    "arguments": ["action", "target"]
+                }
+            ]
+        },
+        {
+            "name": "User Behavior Analytics",
+            "description": "Analyze and detect anomalous user behavior.",
+            "tools": [
+                {
+                    "toolname": "Log Analysis",
+                    "commands": "analyze",
+                    "arguments": ["logs"]
+                },
+                {
+                    "toolname": "Machine Learning",
+                    "commands": "predict",
+                    "arguments": ["model", "logs"]
+                }
+            ]
+        },
+        {
+            "name": "Data Loss Prevention",
+            "description": "Prevent unauthorized access and transmission of sensitive data.",
+            "tools": [
+                {
+                    "toolname": "Data Monitoring",
+                    "commands": "monitor",
+                    "arguments": ["data"]
+                },
+                {
+                    "toolname": "Encryption",
+                    "commands": "encrypt",
+                    "arguments": ["data"]
+                }
+            ]
+        }
+    ]
+}
